@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "cstdint": "c",
+        "cpu.h": "c",
+        "flash.h": "c",
+        "flash_c55_driver.h": "c",
+        "string.h": "c",
+        "cstring": "c",
+        "pin_mux.h": "c",
+        "dmacontroller1.h": "c",
+        "clockman1.h": "c",
+        "can.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}

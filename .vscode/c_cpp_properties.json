@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "D:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include",
+                "D:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/pa",
+                "D:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/devices/**",
+                "D:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/inc/**",
+                "D:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/src/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "CPU_MPC5744P",
+                "TURN_ON_CPU0",
+                "START_FROM_FLASH"
+            ],
+            "compilerPath": "D:/NXP/S32DS_Power_v2.1/S32DS/build_tools/powerpc-eabivle-4_9/bin/powerpc-eabivle-gcc.exe" //編譯器的路徑
+        }
+    ],
+    "version": 4
+}

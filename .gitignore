@@ -1,0 +1,8 @@
+/Debug*
+/Documentation
+/Generated_Code
+/*.cwGeneratedFileSetLog
+/*.pemicro
+/.settings
+/Release
+/SDK

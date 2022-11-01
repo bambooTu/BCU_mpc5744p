@@ -1,0 +1,107 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug(Dev)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Debug/${workspaceFolderBasename}.elf",
+            "args": [],
+            "cwd": "${workspaceFolder}/Debug",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "text": "cd ${workspaceFolder}/Debug"
+                },
+                {
+                    "text": "file ${workspaceFolderBasename}.elf"
+                },
+                {
+                    "text": "target remote:7224"
+                },
+                {
+                    "text": "set mem inaccessible-by-default off"
+                },
+                {
+                    "text": "set tcp auto-retry on"
+                },
+                {
+                    "text": "set tcp connect-timeout 240"
+                },
+                {
+                    "text": "set remotetimeout 60"
+                },
+                {
+                    "text": "monitor preserve1 0"
+                },
+                {
+                    "text": "load"
+                },
+                {
+                    "text": "monitor reset halt",
+                    "ignoreFailures": true
+                },
+                {
+                    "text": "b main",
+                    "ignoreFailures": true
+                }
+            ],
+            "launchCompleteCommand": "None",
+            "miDebuggerPath": "powerpc-eabivle-gdb.exe",
+            "preLaunchTask": "Program and GDB(Dev)",
+        },
+        {
+            "name": "Debug(PCB)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Debug/${workspaceFolderBasename}.elf",
+            "args": [],
+            "cwd": "${workspaceFolder}/Debug",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "text": "cd ${workspaceFolder}/Debug"
+                },
+                {
+                    "text": "file ${workspaceFolderBasename}.elf"
+                },
+                {
+                    "text": "target remote:7224"
+                },
+                {
+                    "text": "set mem inaccessible-by-default off"
+                },
+                {
+                    "text": "set tcp auto-retry on"
+                },
+                {
+                    "text": "set tcp connect-timeout 240"
+                },
+                {
+                    "text": "set remotetimeout 60"
+                },
+                {
+                    "text": "monitor preserve1 0"
+                },
+                {
+                    "text": "load"
+                },
+                {
+                    "text": "monitor reset halt",
+                    "ignoreFailures": true
+                },
+                {
+                    "text": "b main",
+                    "ignoreFailures": true
+                }
+            ],
+            "launchCompleteCommand": "None",
+            "miDebuggerPath": "powerpc-eabivle-gdb.exe",
+            "preLaunchTask": "Program and GDB(PCB)",
+        },
+    ]
+}

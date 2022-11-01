@@ -1,0 +1,119 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build",
+            "command": "make.exe",
+            "args": [
+                "-j16",
+                "all"
+            ],
+            "runOptions": {
+                "runOn": "folderOpen",
+                "instanceLimit": 1,
+                "reevaluateOnRerun": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/Debug"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
+            "label": "Start GDB Server(Dev)",
+            "command": "pegdbserver_power_console.exe",
+            "args": [
+                "-device=MPC5744P",
+                "-startserver",
+                "-singlesession",
+                "-serverport=7224",
+                "-gdbmiport=6224",
+                "-interface=OpenSDA",
+                "-speed=5000",
+                "-resetdelay=250",
+                "-port="
+            ],
+            "isBackground": true,
+            "problemMatcher": [
+                {
+                    "pattern": [
+                        {
+                            "regexp": ".",
+                            "file": 1,
+                            "location": 2,
+                            "message": 3
+                        }
+                    ],
+                    "background": {
+                        "activeOnStart": true,
+                        "beginsPattern": ".",
+                        "endsPattern": ".",
+                    }
+                }
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "Start GDB Server(PCB)",
+            "command": "pegdbserver_power_console.exe",
+            "args": [
+                "-device=MPC5744P",
+                "-startserver",
+                "-singlesession",
+                "-serverport=7224",
+                "-gdbmiport=6224",
+                "-interface=USBMULTILINK",
+                "-speed=3000",
+                "-resetdelay=250",
+                "-rese?"
+            ],
+            "isBackground": true,
+            "problemMatcher": [
+                {
+                    "pattern": [
+                        {
+                            "regexp": ".",
+                            "file": 1,
+                            "location": 2,
+                            "message": 3
+                        }
+                    ],
+                    "background": {
+                        "activeOnStart": true,
+                        "beginsPattern": ".",
+                        "endsPattern": ".",
+                    }
+                }
+            ]
+        },
+        {
+            "label": "Program and GDB(Dev)",
+            "dependsOn": [
+                "Build",
+                "Start GDB Server(Dev)"
+            ],
+            "dependsOrder": "sequence",
+        },
+        {
+            "label": "Program and GDB(PCB)",
+            "dependsOn": [
+                "Build",
+                "Start GDB Server(PCB)"
+            ],
+            "dependsOrder": "sequence",
+        },
+    ]
+}
