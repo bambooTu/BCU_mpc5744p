@@ -80,6 +80,7 @@
 #define RX_MSG_ID  (1UL)
 #endif
 
+#define MAX_DUTY_VAL         8000
 #define CALCULTAE_TIME_MS(A) ((A < 1) ? 10 - 1 : 10 * A - 1)
 /******************************************************************************
  * Private typedef
@@ -121,8 +122,7 @@ struct {
     unsigned short bootTimeCount;
 } appData;
 
-volatile bool     groupConvDone    = false;
-volatile uint32_t resultLastOffset = 0;
+uint16_t              dutyCycle        = MAX_DUTY_VAL;
 /******************************************************************************
  * Function prototypes
  ******************************************************************************/
@@ -229,6 +229,12 @@ void SYS_Initialize(void) {
     /* Initializes given instance of the ADC peripheral */
     ADC_Init(&adc_pal1_instance, &adc_pal1_InitConfig0);
     ADC_StartGroupConversion(&adc_pal1_instance, 0);
+    /* Initializes given instance of the FlexPWM peripheral */
+    FLEXPWM_DRV_SetupPwm(INST_FLEXPWM1, 0U, &flexPWM1_flexpwm_module_setup_t0,
+                         &flexPWM1_flexpwm_module_signal_setup_t0);
+    FLEXPWM_DRV_CounterStart(INST_FLEXPWM1, 0U);
+    FLEXPWM_DRV_UpdatePulseWidth(INST_FLEXPWM1, 0U, 300, 0UL, FlexPwmEdgeAligned);
+    FLEXPWM_DRV_LoadCommands(INST_FLEXPWM1, (1UL << 0));
     /* Initializes given instance of the input capture peripheral */
     IC_Init(&ic_pal1_instance, &ic_pal1_InitConfig);
     IC_SetChannelMode(&ic_pal1_instance, ic_pal1_InitConfig.inputChConfig[0].hwChannelId, IC_MEASURE_PULSE_HIGH);
@@ -291,11 +297,14 @@ int main(void) {
 
                 if (tmrData._1ms.flag) {
                     tmrData._1ms.flag = false;
-                    if(groupConvDone){
-                        groupConvDone=false;
-                        adc_pal1_Results00[0];
-                        ADC_StartGroupConversion(&adc_pal1_instance, 0);
+                    if (dutyCycle) {
+                        dutyCycle--;
+                    } else {
+                        dutyCycle = MAX_DUTY_VAL;
                     }
+                    FLEXPWM_DRV_UpdatePulseWidth(INST_FLEXPWM1, 0U, dutyCycle, MAX_DUTY_VAL - dutyCycle,
+                                                 FlexPwmEdgeAligned);
+                    FLEXPWM_DRV_LoadCommands(INST_FLEXPWM1, (1UL << 0));
                 }
 
                 if (tmrData._5ms.flag) {
