@@ -109,6 +109,13 @@ struct {
 } tmrData;
 
 struct {
+    uint32_t         period;
+    uint32_t         duty;
+    ic_option_mode_t state;
+    bool             xferDone;
+} captureData;
+
+struct {
     APP_STATUS_e   state;
     unsigned       mainPWR : 1;
     unsigned short bootTimeCount;
@@ -159,6 +166,12 @@ void adc_pal1_callback00(const adc_callback_info_t* const callbackInfo, void* us
     (void)userData;
     groupConvDone    = true;
     resultLastOffset = callbackInfo->resultBufferTail;
+}
+void ic_pal1_callback00(ic_event_t event, void* userData) {
+    static uint8_t captureCnt = 0;
+
+    captureCnt++;
+    captureData.xferDone = true;
 }
 void BTN_IRQCallback(void) {
     /* Check if one of the buttons was pressed */
@@ -216,6 +229,12 @@ void SYS_Initialize(void) {
     /* Initializes given instance of the ADC peripheral */
     ADC_Init(&adc_pal1_instance, &adc_pal1_InitConfig0);
     ADC_StartGroupConversion(&adc_pal1_instance, 0);
+    /* Initializes given instance of the input capture peripheral */
+    IC_Init(&ic_pal1_instance, &ic_pal1_InitConfig);
+    IC_SetChannelMode(&ic_pal1_instance, ic_pal1_InitConfig.inputChConfig[0].hwChannelId, IC_MEASURE_PULSE_HIGH);
+    captureData.state = IC_MEASURE_PULSE_HIGH;
+    IC_EnableNotification(&ic_pal1_instance, ic_pal1_InitConfig.inputChConfig[0].hwChannelId);
+    IC_StartChannel(&ic_pal1_instance, ic_pal1_InitConfig.inputChConfig[0].hwChannelId);
 }
 /*
  * @brief Function which configures the LEDs and Buttons
@@ -285,6 +304,43 @@ int main(void) {
 
                 if (tmrData._10ms.flag) {
                     tmrData._10ms.flag = false;
+                    if (captureData.xferDone) {
+                        captureData.xferDone = false;
+                        switch (captureData.state) {
+                            case IC_MEASURE_PULSE_HIGH:
+                                IC_StopChannel(&ic_pal1_instance, ic_pal1_InitConfig.inputChConfig[0].hwChannelId);
+                                captureData.duty = IC_GetMeasurement(&ic_pal1_instance,
+                                                                     ic_pal1_InitConfig.inputChConfig[0].hwChannelId);
+                                IC_SetChannelMode(&ic_pal1_instance, ic_pal1_InitConfig.inputChConfig[0].hwChannelId,
+                                                  IC_MEASURE_PULSE_HIGH);
+                                captureData.state = IC_MEASURE_RISING_EDGE_PERIOD;
+                                IC_StartChannel(&ic_pal1_instance, ic_pal1_InitConfig.inputChConfig[0].hwChannelId);
+                                break;
+                            case IC_MEASURE_RISING_EDGE_PERIOD:
+                                IC_StopChannel(&ic_pal1_instance, ic_pal1_InitConfig.inputChConfig[0].hwChannelId);
+                                captureData.period = IC_GetMeasurement(&ic_pal1_instance,
+                                                                       ic_pal1_InitConfig.inputChConfig[0].hwChannelId);
+
+                                IC_SetChannelMode(&ic_pal1_instance, ic_pal1_InitConfig.inputChConfig[0].hwChannelId,
+                                                  IC_MEASURE_RISING_EDGE_PERIOD);
+                                captureData.state = IC_MEASURE_PULSE_HIGH;
+                                IC_StartChannel(&ic_pal1_instance, ic_pal1_InitConfig.inputChConfig[0].hwChannelId);
+                                break;
+                            default:
+                                break;
+                        }
+                        canTxMsg.msgId   = 0x16000000;
+                        canTxMsg.dataLen = 8;
+                        canTxMsg.data[0] = LOW_BYTE(LOW_WORD(captureData.duty));
+                        canTxMsg.data[1] = HIGH_BYTE(LOW_WORD(captureData.duty));
+                        canTxMsg.data[2] = LOW_BYTE(HIGH_WORD(captureData.duty));
+                        canTxMsg.data[3] = HIGH_BYTE(HIGH_WORD(captureData.duty));
+                        canTxMsg.data[4] = LOW_BYTE(LOW_WORD(captureData.period));
+                        canTxMsg.data[5] = HIGH_BYTE(LOW_WORD(captureData.period));
+                        canTxMsg.data[6] = LOW_BYTE(HIGH_WORD(captureData.period));
+                        canTxMsg.data[7] = HIGH_BYTE(HIGH_WORD(captureData.period));
+                        CAN_PushTxQueue(CAN_MODULE_1, &canTxMsg);
+                    }
                 }
 
                 if (tmrData._20ms.flag) {
