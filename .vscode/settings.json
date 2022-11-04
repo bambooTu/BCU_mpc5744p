@@ -9,7 +9,10 @@
         "pin_mux.h": "c",
         "dmacontroller1.h": "c",
         "clockman1.h": "c",
-        "can.h": "c"
+        "can.h": "c",
+        "flexcan_driver.h": "c",
+        "commonly_used.h": "c",
+        "uart_queue.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

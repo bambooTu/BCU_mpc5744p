@@ -2,9 +2,12 @@
   <ToolchainSettings>
     <option>
       <name>PE_G_4PEx_ToolChain_C_Compiler_Includes</name>
-      <values lines_count="8">
+      <values lines_count="11">
         <Line>"${S32_SDK_PATH}/platform/drivers/src/clock/MPC57xx"</Line>
         <Line>"${S32_SDK_PATH}/rtos/osif/"</Line>
+        <Line>"${S32_SDK_PATH}/platform/pal/inc"</Line>
+        <Line>"${S32_SDK_PATH}/platform/pal/inc"</Line>
+        <Line>"${S32_SDK_PATH}/platform/pal/inc"</Line>
         <Line>"${S32_SDK_PATH}/platform/pal/inc"</Line>
         <Line>"${S32_SDK_PATH}/platform/devices"</Line>
         <Line>"${S32_SDK_PATH}/platform/devices/common"</Line>
@@ -31,81 +34,110 @@
       <File Name="SDK/platform/devices/common/s32_core_e200.h" FileDate="2019-06-25, 03:49:04" FileAge="1561405744000" FileType="262144" />
       <File Name="SDK/platform/drivers/inc/edma_driver.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="Generated_Code/clockMan1.h" FileDate="2022-11-01, 11:42:16" FileAge="1667274136212" FileType="45637" CompNumb="14" />
-      <File Name="Generated_Code/pin_mux.c" FileDate="2022-11-01, 11:42:16" FileAge="1667274136195" FileType="45637" CompNumb="18" />
+      <File Name="Generated_Code/pin_mux.c" FileDate="2022-11-04, 14:52:06" FileAge="1667544726754" FileType="45637" CompNumb="18" />
       <File Name="SDK/platform/drivers/src/clock/MPC57xx/mc_me_hw_access.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="Generated_Code/clockMan1.c" FileDate="2022-11-01, 11:42:16" FileAge="1667274136212" FileType="45637" CompNumb="14" />
+      <File Name="SDK/platform/pal/inc/uart_pal_mapping.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/drivers/src/pit/pit_driver.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/pal/inc/adc_pal_mapping.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/drivers/src/pit/pit_hw_access.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
+      <File Name="SDK/platform/pal/inc/ic_pal.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/drivers/inc/interrupt_manager.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
+      <File Name="SDK/platform/drivers/src/flexpwm/flexpwm_driver.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/drivers/src/pit/pit_hw_access.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/drivers/src/adc_sar/adc_sar_hw_access.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
-      <File Name="Generated_Code/Cpu.h" FileDate="2022-11-01, 11:42:16" FileAge="1667274136180" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/Cpu.h" FileDate="2022-11-04, 14:52:06" FileAge="1667544726785" FileType="45637" CompNumb="6" />
       <File Name="SDK/platform/pal/inc/adc_pal.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
-      <File Name="Generated_Code/Cpu.c" FileDate="2022-11-01, 11:42:16" FileAge="1667274136167" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/Cpu.c" FileDate="2022-11-01, 14:31:18" FileAge="1667284278692" FileType="45637" CompNumb="6" />
       <File Name="SDK/platform/drivers/src/pins/siul2/pins_siul2_driver.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/drivers/inc/flexcan_driver.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
+      <File Name="SDK/platform/pal/src/ic/ic_irq.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
+      <File Name="Generated_Code/uart_pal2.h" FileDate="2022-11-04, 14:52:06" FileAge="1667544726722" FileType="45637" CompNumb="42" />
       <File Name="SDK/platform/drivers/src/edma/edma_irq.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/drivers/src/pins/siul2/pins_siul2_driver.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
+      <File Name="SDK/platform/pal/src/ic/ic_irq.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
+      <File Name="SDK/platform/drivers/inc/etimer_driver.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
+      <File Name="Generated_Code/uart_pal2.c" FileDate="2022-11-04, 14:52:06" FileAge="1667544726710" FileType="45637" CompNumb="42" />
       <File Name="SDK/platform/drivers/src/edma/edma_irq.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
-      <File Name="SDK/platform/drivers/inc/clock.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
+      <File Name="Generated_Code/uart_pal1.h" FileDate="2022-11-04, 14:52:06" FileAge="1667544726754" FileType="45637" CompNumb="41" />
+      <File Name="SDK/platform/drivers/src/linflexd/linflexd_uart_irq.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
+      <File Name="Generated_Code/uart_pal1.c" FileDate="2022-11-04, 14:52:06" FileAge="1667544726769" FileType="45637" CompNumb="41" />
+      <File Name="SDK/platform/pal/inc/ic_pal_mapping.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
+      <File Name="SDK/platform/drivers/src/linflexd/linflexd_uart_irq.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="Project_Settings/Startup_Code/core0_intc_sw_handlers.S" FileDate="2019-06-25, 03:49:06" FileAge="1561405746000" FileType="262144" />
+      <File Name="SDK/platform/drivers/inc/clock.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/drivers/src/flexcan/flexcan_hw_access.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/drivers/inc/ctu_driver.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/drivers/src/flexcan/flexcan_hw_access.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="Project_Settings/Linker_Files/linker_ram.ld" FileDate="2019-06-25, 03:49:06" FileAge="1561405746000" FileType="262144" />
       <File Name="SDK/rtos/osif/osif_baremetal.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/drivers/src/pins/siul2/siul2_hw_access.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
+      <File Name="SDK/platform/drivers/inc/flexpwm_driver.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/devices/devassert.h" FileDate="2019-06-25, 03:49:04" FileAge="1561405744000" FileType="262144" />
       <File Name="SDK/platform/drivers/src/pins/siul2/siul2_hw_access.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
+      <File Name="Generated_Code/uart_pal_cfg.h" FileDate="2022-11-04, 14:52:06" FileAge="1667544726801" FileType="45637" CompNumb="6" />
       <File Name="SDK/platform/drivers/inc/clock_manager.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/drivers/src/clock/MPC57xx/cgm_hw_access.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/rtos/osif/osif.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="Generated_Code/canCom1.h" FileDate="2022-11-01, 11:42:16" FileAge="1667274136196" FileType="45637" CompNumb="17" />
       <File Name="SDK/platform/devices/MPC5744P/include/MPC5744P.h" FileDate="2019-06-25, 03:49:06" FileAge="1561405746000" FileType="262144" />
       <File Name="Project_Settings/Startup_Code/startup_MPC5744P.S" FileDate="2019-06-25, 03:49:06" FileAge="1561405746000" FileType="262144" />
-      <File Name="SDK/platform/drivers/src/interrupt/interrupt_manager_MPC57xx.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/drivers/src/ctu/ctu_driver.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
+      <File Name="Generated_Code/ic_pal1.h" FileDate="2022-11-01, 15:37:46" FileAge="1667288266853" FileType="45637" CompNumb="25" />
+      <File Name="SDK/platform/drivers/src/interrupt/interrupt_manager_MPC57xx.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/pal/src/adc/adc_irq.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/devices/device_registers.h" FileDate="2019-06-25, 03:49:04" FileAge="1561405744000" FileType="262144" />
       <File Name="Project_Settings/Startup_Code/interrupt_vectors.S" FileDate="2019-06-25, 03:49:06" FileAge="1561405746000" FileType="262144" />
       <File Name="Generated_Code/canCom1.c" FileDate="2022-11-01, 11:42:16" FileAge="1667274136196" FileType="45637" CompNumb="17" />
+      <File Name="Generated_Code/ic_pal1.c" FileDate="2022-11-02, 13:03:50" FileAge="1667365430519" FileType="45637" CompNumb="25" />
       <File Name="SDK/platform/pal/src/adc/adc_irq.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/drivers/inc/pit_driver.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/drivers/src/edma/edma_driver.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
-      <File Name="Generated_Code/adc_pal_cfg.h" FileDate="2022-11-01, 11:42:16" FileAge="1667274136167" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/flexPWM1.h" FileDate="2022-11-01, 14:38:12" FileAge="1667284692122" FileType="45637" CompNumb="26" />
+      <File Name="SDK/platform/pal/src/uart/uart_pal.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
+      <File Name="Generated_Code/flexPWM1.c" FileDate="2022-11-01, 14:38:12" FileAge="1667284692122" FileType="45637" CompNumb="26" />
+      <File Name="SDK/platform/pal/src/ic/ic_pal.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
+      <File Name="SDK/platform/drivers/src/linflexd/linflexd_uart_driver.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
+      <File Name="Generated_Code/adc_pal_cfg.h" FileDate="2022-11-01, 14:31:18" FileAge="1667284278692" FileType="45637" CompNumb="6" />
       <File Name="SDK/platform/drivers/src/edma/edma_hw_access.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/drivers/src/flexcan/flexcan_irq.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/drivers/src/clock/MPC57xx/cgmcs_hw_access.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
+      <File Name="Generated_Code/ic_pal_cfg.h" FileDate="2022-11-04, 14:52:06" FileAge="1667544726801" FileType="45637" CompNumb="6" />
       <File Name="SDK/platform/drivers/src/clock/MPC57xx/cmu_hw_access.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/devices/startup.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="Generated_Code/pit1.h" FileDate="2022-11-01, 11:42:16" FileAge="1667274136180" FileType="45637" CompNumb="19" />
       <File Name="SDK/platform/drivers/src/edma/edma_hw_access.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/drivers/src/flexcan/flexcan_irq.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
-      <File Name="SDK/platform/devices/MPC5744P/startup/system_MPC5744P.h" FileDate="2019-06-25, 03:49:06" FileAge="1561405746000" FileType="262144" />
       <File Name="SDK/platform/devices/startup.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
+      <File Name="SDK/platform/devices/MPC5744P/startup/system_MPC5744P.h" FileDate="2019-06-25, 03:49:06" FileAge="1561405746000" FileType="262144" />
       <File Name="Generated_Code/pit1.c" FileDate="2022-11-01, 11:42:16" FileAge="1667274136180" FileType="45637" CompNumb="19" />
       <File Name="SDK/platform/drivers/src/adc_sar/adc_sar_driver.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/drivers/inc/pins_driver.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
+      <File Name="SDK/platform/drivers/src/etimer/etimer_hw_access.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/devices/MPC5744P/startup/system_MPC5744P.c" FileDate="2019-06-25, 03:49:06" FileAge="1561405746000" FileType="262144" />
       <File Name="SDK/platform/drivers/src/flexcan/flexcan_driver.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
-      <File Name="Documentation/BCU_mpc5744p_Settings.xml" FileDate="2022-11-01, 11:42:16" FileAge="1667274136227" FileType="3072" />
+      <File Name="Documentation/BCU_mpc5744p_Settings.xml" FileDate="2022-11-04, 14:52:06" FileAge="1667544726879" FileType="3072" />
+      <File Name="SDK/platform/drivers/src/etimer/etimer_hw_access.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/devices/status.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
-      <File Name="Generated_Code/dmaController1.h" FileDate="2022-11-01, 11:42:16" FileAge="1667274136212" FileType="45637" CompNumb="15" />
-      <File Name="Documentation/BCU_mpc5744p.txt" FileDate="2022-11-01, 11:42:16" FileAge="1667274136243" FileType="3072" />
-      <File Name="Generated_Code/dmaController1.c" FileDate="2022-11-01, 11:42:16" FileAge="1667274136212" FileType="45637" CompNumb="15" />
+      <File Name="Generated_Code/dmaController1.h" FileDate="2022-11-03, 15:18:10" FileAge="1667459890344" FileType="45637" CompNumb="15" />
+      <File Name="Documentation/BCU_mpc5744p.txt" FileDate="2022-11-04, 14:52:06" FileAge="1667544726910" FileType="3072" />
+      <File Name="Generated_Code/dmaController1.c" FileDate="2022-11-03, 15:18:10" FileAge="1667459890351" FileType="45637" CompNumb="15" />
       <File Name="SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/devices/callbacks.h" FileDate="2019-06-25, 03:49:04" FileAge="1561405744000" FileType="262144" />
       <File Name="Project_Settings/Linker_Files/linker_flash.ld" FileDate="2019-06-25, 03:49:06" FileAge="1561405746000" FileType="262144" />
       <File Name="SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="Generated_Code/adc_pal1.h" FileDate="2022-11-01, 11:42:16" FileAge="1667274136180" FileType="45637" CompNumb="20" />
       <File Name="SDK/platform/devices/MPC5744P/include/MPC5744P_features.h" FileDate="2019-06-25, 03:49:06" FileAge="1561405746000" FileType="262144" />
+      <File Name="SDK/platform/drivers/inc/linflexd_uart_driver.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/drivers/inc/adc_sar_driver.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="Generated_Code/adc_pal1.c" FileDate="2022-11-01, 11:42:16" FileAge="1667274136180" FileType="45637" CompNumb="20" />
-      <File Name="Sources/main.c" FileDate="2022-11-01, 10:57:38" FileAge="1667271458381" FileType="128" />
+      <File Name="Sources/main.c" FileDate="2022-11-04, 14:52:06" FileAge="1667544726785" FileType="128" />
+      <File Name="SDK/platform/pal/inc/uart_pal.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
       <File Name="SDK/platform/pal/src/adc/adc_pal.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
-      <File Name="Generated_Code/pin_mux.h" FileDate="2022-11-01, 11:42:16" FileAge="1667274136196" FileType="45637" CompNumb="18" />
+      <File Name="SDK/platform/drivers/src/etimer/etimer_driver.c" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
+      <File Name="SDK/platform/drivers/src/linflexd/linflexd_hw_access.h" FileDate="2019-06-25, 03:49:10" FileAge="1561405750000" FileType="262144" />
+      <File Name="Generated_Code/pin_mux.h" FileDate="2022-11-04, 14:52:06" FileAge="1667544726738" FileType="45637" CompNumb="18" />
     </GeneratedByPE>
   </GeneratedFilesList>
-  <CodeGenReference>1</CodeGenReference>
+  <CodeGenReference>31</CodeGenReference>
 </CodeGenerationInfo>

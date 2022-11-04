@@ -14,12 +14,18 @@
       <LinkerFileGenerated>false</LinkerFileGenerated>
       <MakefileGenerated>false</MakefileGenerated>
       <GenSharedModules lines_count="0" />
-      <GenExtraFiles lines_count="1">
+      <GenExtraFiles lines_count="3">
+        <Line>Generated_Code\uart_pal_cfg.h</Line>
+        <Line>Generated_Code\ic_pal_cfg.h</Line>
         <Line>Generated_Code\adc_pal_cfg.h</Line>
       </GenExtraFiles>
-      <XtraAge0>1432444232</XtraAge0>
+      <XtraAge0>1432647299</XtraAge0>
+      <XtraAge1>1432647299</XtraAge1>
+      <XtraAge2>1432450025</XtraAge2>
+      <GenExtraFileType2>4</GenExtraFileType2>
+      <GenExtraFileType1>4</GenExtraFileType1>
       <GenExtraFileType0>4</GenExtraFileType0>
-      <GenLinkedFiles lines_count="59">
+      <GenLinkedFiles lines_count="78">
         <Line>SDK\platform\devices\devassert.h=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\devices\devassert.h</Line>
         <Line>SDK\platform\devices\status.h=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\devices\status.h</Line>
         <Line>SDK\platform\devices\device_registers.h=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\devices\device_registers.h</Line>
@@ -41,6 +47,25 @@
         <Line>SDK\platform\drivers\inc\adc_sar_driver.h=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\inc\adc_sar_driver.h</Line>
         <Line>SDK\platform\drivers\src\ctu\ctu_driver.c=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\src\ctu\ctu_driver.c</Line>
         <Line>SDK\platform\drivers\inc\ctu_driver.h=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\inc\ctu_driver.h</Line>
+        <Line>SDK\platform\drivers\src\etimer\etimer_driver.c=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\src\etimer\etimer_driver.c</Line>
+        <Line>SDK\platform\drivers\src\etimer\etimer_hw_access.c=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\src\etimer\etimer_hw_access.c</Line>
+        <Line>SDK\platform\drivers\src\etimer\etimer_hw_access.h=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\src\etimer\etimer_hw_access.h</Line>
+        <Line>SDK\platform\drivers\inc\etimer_driver.h=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\inc\etimer_driver.h</Line>
+        <Line>SDK\platform\drivers\src\linflexd\linflexd_uart_driver.c=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\src\linflexd\linflexd_uart_driver.c</Line>
+        <Line>SDK\platform\drivers\src\linflexd\linflexd_uart_irq.c=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\src\linflexd\linflexd_uart_irq.c</Line>
+        <Line>SDK\platform\drivers\inc\linflexd_uart_driver.h=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\inc\linflexd_uart_driver.h</Line>
+        <Line>SDK\platform\drivers\src\linflexd\linflexd_hw_access.h=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\src\linflexd\linflexd_hw_access.h</Line>
+        <Line>SDK\platform\drivers\src\linflexd\linflexd_uart_irq.h=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\src\linflexd\linflexd_uart_irq.h</Line>
+        <Line>SDK\platform\pal\src\uart\uart_pal.c=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\pal\src\uart\uart_pal.c</Line>
+        <Line>SDK\platform\pal\inc\uart_pal_mapping.h=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\pal\inc\uart_pal_mapping.h</Line>
+        <Line>SDK\platform\pal\inc\uart_pal.h=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\pal\inc\uart_pal.h</Line>
+        <Line>SDK\platform\drivers\src\flexpwm\flexpwm_driver.c=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\src\flexpwm\flexpwm_driver.c</Line>
+        <Line>SDK\platform\drivers\inc\flexpwm_driver.h=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\inc\flexpwm_driver.h</Line>
+        <Line>SDK\platform\pal\src\ic\ic_pal.c=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\pal\src\ic\ic_pal.c</Line>
+        <Line>SDK\platform\pal\src\ic\ic_irq.c=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\pal\src\ic\ic_irq.c</Line>
+        <Line>SDK\platform\pal\src\ic\ic_irq.h=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\pal\src\ic\ic_irq.h</Line>
+        <Line>SDK\platform\pal\inc\ic_pal_mapping.h=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\pal\inc\ic_pal_mapping.h</Line>
+        <Line>SDK\platform\pal\inc\ic_pal.h=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\pal\inc\ic_pal.h</Line>
         <Line>SDK\platform\pal\src\adc\adc_pal.c=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\pal\src\adc\adc_pal.c</Line>
         <Line>SDK\platform\pal\src\adc\adc_irq.c=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\pal\src\adc\adc_irq.c</Line>
         <Line>SDK\platform\pal\src\adc\adc_irq.h=D:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\pal\src\adc\adc_irq.h</Line>
@@ -84,29 +109,37 @@
         <Line>Events</Line>
       </GenEventModules>
       <GenMethodsInEvents lines_count="0" />
-      <GenAllModules lines_count="8">
+      <GenAllModules lines_count="12">
         <Line>adc_pal1</Line>
         <Line>canCom1</Line>
         <Line>clockMan1</Line>
         <Line>Cpu</Line>
         <Line>dmaController1</Line>
         <Line>Events</Line>
+        <Line>flexPWM1</Line>
+        <Line>ic_pal1</Line>
         <Line>pin_mux</Line>
         <Line>pit1</Line>
+        <Line>uart_pal1</Line>
+        <Line>uart_pal2</Line>
       </GenAllModules>
       <GenExternModules lines_count="0" />
-      <GenBeanModules lines_count="6">
+      <GenBeanModules lines_count="10">
         <Line>clockMan1</Line>
         <Line>dmaController1</Line>
         <Line>canCom1</Line>
         <Line>pin_mux</Line>
         <Line>pit1</Line>
         <Line>adc_pal1</Line>
+        <Line>ic_pal1</Line>
+        <Line>flexPWM1</Line>
+        <Line>uart_pal1</Line>
+        <Line>uart_pal2</Line>
       </GenBeanModules>
     </GenFiles>
     <SignalListFile />
     <DestinationCompiler>GNUC</DestinationCompiler>
-    <ProjectModificationStamp>19</ProjectModificationStamp>
+    <ProjectModificationStamp>44</ProjectModificationStamp>
   </Options>
   <CpuID_6>
     <Generated>true</Generated>
@@ -114,8 +147,8 @@
     <GenComponentVersion>01.197</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule>Events</GenEventModule>
-    <HeaderAge>1432444232</HeaderAge>
-    <CodeAge>1432444232</CodeAge>
+    <HeaderAge>1432647299</HeaderAge>
+    <CodeAge>1432450025</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>3</GenNumMethods>
     <SystemInit>true</SystemInit>
@@ -128,29 +161,48 @@
     <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
     <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
     <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
-    <GenExtraFilesCount>22</GenExtraFilesCount>
-    <ExtraFile0>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\drivers\inc\ctu_driver.h</ExtraFile0>
-    <ExtraFile1>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\drivers\src\ctu\ctu_driver.c</ExtraFile1>
-    <ExtraFile2>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\drivers\inc\adc_sar_driver.h</ExtraFile2>
-    <ExtraFile3>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\drivers\src\adc_sar\adc_sar_hw_access.h</ExtraFile3>
-    <ExtraFile4>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\drivers\src\adc_sar\adc_sar_driver.c</ExtraFile4>
-    <ExtraFile5>Generated_Code\adc_pal_cfg.h</ExtraFile5>
-    <ExtraFile6>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\Project_Settings\Startup_Code\core0_intc_sw_handlers.S</ExtraFile6>
-    <ExtraFile7>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\Project_Settings\Startup_Code\interrupt_vectors.S</ExtraFile7>
-    <ExtraFile8>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\Project_Settings\Startup_Code\startup_MPC5744P.S</ExtraFile8>
-    <ExtraFile9>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\Project_Settings\Linker_Files\linker_ram.ld</ExtraFile9>
-    <ExtraFile10>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\Project_Settings\Linker_Files\linker_flash.ld</ExtraFile10>
-    <ExtraFile11>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\MPC5744P\include\MPC5744P.h</ExtraFile11>
-    <ExtraFile12>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\MPC5744P\include\MPC5744P_features.h</ExtraFile12>
-    <ExtraFile13>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\MPC5744P\startup\system_MPC5744P.c</ExtraFile13>
-    <ExtraFile14>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\MPC5744P\startup\system_MPC5744P.h</ExtraFile14>
-    <ExtraFile15>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\startup.c</ExtraFile15>
-    <ExtraFile16>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\startup.h</ExtraFile16>
-    <ExtraFile17>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\common\s32_core_e200.h</ExtraFile17>
-    <ExtraFile18>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\callbacks.h</ExtraFile18>
-    <ExtraFile19>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\device_registers.h</ExtraFile19>
-    <ExtraFile20>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\status.h</ExtraFile20>
-    <ExtraFile21>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\devassert.h</ExtraFile21>
+    <GenExtraFilesCount>41</GenExtraFilesCount>
+    <ExtraFile0>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\drivers\src\linflexd\linflexd_uart_irq.h</ExtraFile0>
+    <ExtraFile1>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\drivers\src\linflexd\linflexd_hw_access.h</ExtraFile1>
+    <ExtraFile2>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\drivers\inc\linflexd_uart_driver.h</ExtraFile2>
+    <ExtraFile3>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\drivers\src\linflexd\linflexd_uart_irq.c</ExtraFile3>
+    <ExtraFile4>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\drivers\src\linflexd\linflexd_uart_driver.c</ExtraFile4>
+    <ExtraFile5>Generated_Code\uart_pal_cfg.h</ExtraFile5>
+    <ExtraFile6>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\pal\inc\uart_pal.h</ExtraFile6>
+    <ExtraFile7>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\pal\inc\uart_pal_mapping.h</ExtraFile7>
+    <ExtraFile8>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\pal\src\uart\uart_pal.c</ExtraFile8>
+    <ExtraFile9>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\drivers\inc\etimer_driver.h</ExtraFile9>
+    <ExtraFile10>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\drivers\src\etimer\etimer_hw_access.h</ExtraFile10>
+    <ExtraFile11>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\drivers\src\etimer\etimer_hw_access.c</ExtraFile11>
+    <ExtraFile12>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\drivers\src\etimer\etimer_driver.c</ExtraFile12>
+    <ExtraFile13>Generated_Code\ic_pal_cfg.h</ExtraFile13>
+    <ExtraFile14>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\pal\inc\ic_pal.h</ExtraFile14>
+    <ExtraFile15>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\pal\inc\ic_pal_mapping.h</ExtraFile15>
+    <ExtraFile16>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\pal\src\ic\ic_irq.h</ExtraFile16>
+    <ExtraFile17>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\pal\src\ic\ic_irq.c</ExtraFile17>
+    <ExtraFile18>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\pal\src\ic\ic_pal.c</ExtraFile18>
+    <ExtraFile19>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\drivers\inc\ctu_driver.h</ExtraFile19>
+    <ExtraFile20>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\drivers\src\ctu\ctu_driver.c</ExtraFile20>
+    <ExtraFile21>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\drivers\inc\adc_sar_driver.h</ExtraFile21>
+    <ExtraFile22>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\drivers\src\adc_sar\adc_sar_hw_access.h</ExtraFile22>
+    <ExtraFile23>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\drivers\src\adc_sar\adc_sar_driver.c</ExtraFile23>
+    <ExtraFile24>Generated_Code\adc_pal_cfg.h</ExtraFile24>
+    <ExtraFile25>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\Project_Settings\Startup_Code\core0_intc_sw_handlers.S</ExtraFile25>
+    <ExtraFile26>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\Project_Settings\Startup_Code\interrupt_vectors.S</ExtraFile26>
+    <ExtraFile27>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\Project_Settings\Startup_Code\startup_MPC5744P.S</ExtraFile27>
+    <ExtraFile28>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\Project_Settings\Linker_Files\linker_ram.ld</ExtraFile28>
+    <ExtraFile29>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\Project_Settings\Linker_Files\linker_flash.ld</ExtraFile29>
+    <ExtraFile30>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\MPC5744P\include\MPC5744P.h</ExtraFile30>
+    <ExtraFile31>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\MPC5744P\include\MPC5744P_features.h</ExtraFile31>
+    <ExtraFile32>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\MPC5744P\startup\system_MPC5744P.c</ExtraFile32>
+    <ExtraFile33>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\MPC5744P\startup\system_MPC5744P.h</ExtraFile33>
+    <ExtraFile34>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\startup.c</ExtraFile34>
+    <ExtraFile35>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\startup.h</ExtraFile35>
+    <ExtraFile36>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\common\s32_core_e200.h</ExtraFile36>
+    <ExtraFile37>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\callbacks.h</ExtraFile37>
+    <ExtraFile38>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\device_registers.h</ExtraFile38>
+    <ExtraFile39>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\status.h</ExtraFile39>
+    <ExtraFile40>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\devices\devassert.h</ExtraFile40>
   </CpuID_6>
   <ComponentID_12>
     <Generated>true</Generated>
@@ -220,8 +272,8 @@
     <GenComponentVersion>SDK_S32_PA_11</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1432444232</HeaderAge>
-    <CodeAge>1432444232</CodeAge>
+    <HeaderAge>1432582725</HeaderAge>
+    <CodeAge>1432582725</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>32</GenNumMethods>
     <EDMA_DRV_Init>true</EDMA_DRV_Init>
@@ -353,8 +405,8 @@
     <GenComponentVersion>1.2.0</GenComponentVersion>
     <GenDriverVersion>1.4</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1432444232</HeaderAge>
-    <CodeAge>1432444232</CodeAge>
+    <HeaderAge>1432647299</HeaderAge>
+    <CodeAge>1432647299</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>17</GenNumMethods>
     <PINS_DRV_Init>true</PINS_DRV_Init>
@@ -456,61 +508,236 @@
     <ExtraFile3>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\pal\src\adc\adc_irq.c</ExtraFile3>
     <ExtraFile4>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\pal\src\adc\adc_pal.c</ExtraFile4>
   </ComponentID_20>
+  <ComponentID_25>
+    <Generated>true</Generated>
+    <GenCompName>ic_pal1</GenCompName>
+    <GenComponentVersion>SDK_S32_PA_11</GenComponentVersion>
+    <GenDriverVersion>01.00</GenDriverVersion>
+    <GenEventModule />
+    <HeaderAge>1432452279</HeaderAge>
+    <CodeAge>1432512633</CodeAge>
+    <AsemblAge>-1</AsemblAge>
+    <GenNumMethods>6</GenNumMethods>
+    <IC_Init>true</IC_Init>
+    <IC_Deinit>true</IC_Deinit>
+    <IC_StartChannel>true</IC_StartChannel>
+    <IC_StopChannel>true</IC_StopChannel>
+    <IC_SetChannelMode>true</IC_SetChannelMode>
+    <IC_GetMeasurement>true</IC_GetMeasurement>
+    <GenNumEvents>0</GenNumEvents>
+    <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
+    <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
+    <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
+    <GenMethodPos>0</GenMethodPos>
+    <GenExtraFilesCount>5</GenExtraFilesCount>
+    <ExtraFile0>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\pal\inc\ic_pal.h</ExtraFile0>
+    <ExtraFile1>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\pal\inc\ic_pal_mapping.h</ExtraFile1>
+    <ExtraFile2>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\pal\src\ic\ic_irq.h</ExtraFile2>
+    <ExtraFile3>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\pal\src\ic\ic_irq.c</ExtraFile3>
+    <ExtraFile4>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\pal\src\ic\ic_pal.c</ExtraFile4>
+  </ComponentID_25>
+  <ComponentID_26>
+    <Generated>true</Generated>
+    <GenCompName>flexPWM1</GenCompName>
+    <GenComponentVersion>S32_SDK_C55</GenComponentVersion>
+    <GenDriverVersion>01.00</GenDriverVersion>
+    <GenEventModule />
+    <HeaderAge>1432450246</HeaderAge>
+    <CodeAge>1432450246</CodeAge>
+    <AsemblAge>-1</AsemblAge>
+    <GenNumMethods>47</GenNumMethods>
+    <FLEXPWM_DRV_Deinit>true</FLEXPWM_DRV_Deinit>
+    <FLEXPWM_DRV_GetDefaultConfig>true</FLEXPWM_DRV_GetDefaultConfig>
+    <FLEXPWM_DRV_SetupPwm>true</FLEXPWM_DRV_SetupPwm>
+    <FLEXPWM_DRV_UpdatePwmSignal>true</FLEXPWM_DRV_UpdatePwmSignal>
+    <FLEXPWM_DRV_UpdatePwmPeriod>true</FLEXPWM_DRV_UpdatePwmPeriod>
+    <FLEXPWM_DRV_UpdatePulseWidth>true</FLEXPWM_DRV_UpdatePulseWidth>
+    <FLEXPWM_DRV_UpdateMidCycleReload>true</FLEXPWM_DRV_UpdateMidCycleReload>
+    <FLEXPWM_DRV_LoadCommands>true</FLEXPWM_DRV_LoadCommands>
+    <FLEXPWM_DRV_GetCounterValue>true</FLEXPWM_DRV_GetCounterValue>
+    <FLEXPWM_DRV_GetPeriod>true</FLEXPWM_DRV_GetPeriod>
+    <FLEXPWM_DRV_GetCmpRegValue>true</FLEXPWM_DRV_GetCmpRegValue>
+    <FLEXPWM_DRV_SetTriggerCmd>true</FLEXPWM_DRV_SetTriggerCmd>
+    <FLEXPWM_DRV_SetTriggerVal>true</FLEXPWM_DRV_SetTriggerVal>
+    <FLEXPWM_DRV_CounterStart>true</FLEXPWM_DRV_CounterStart>
+    <FLEXPWM_DRV_CounterStop>true</FLEXPWM_DRV_CounterStop>
+    <FLEXPWM_DRV_ForcePwmOutput>true</FLEXPWM_DRV_ForcePwmOutput>
+    <FLEXPWM_DRV_EnableModuleInterrupts>true</FLEXPWM_DRV_EnableModuleInterrupts>
+    <FLEXPWM_DRV_DisableModuleInterrupts>true</FLEXPWM_DRV_DisableModuleInterrupts>
+    <FLEXPWM_DRV_ConfigureInputCapture>true</FLEXPWM_DRV_ConfigureInputCapture>
+    <FLEXPWM_DRV_StartInputCapture>true</FLEXPWM_DRV_StartInputCapture>
+    <FLEXPWM_DRV_StopInputCapture>true</FLEXPWM_DRV_StopInputCapture>
+    <FLEXPWM_DRV_GetEdgeCounter>true</FLEXPWM_DRV_GetEdgeCounter>
+    <FLEXPWM_DRV_SetEdgeCompare>true</FLEXPWM_DRV_SetEdgeCompare>
+    <FLEXPWM_DRV_EnableEdgeCounting>true</FLEXPWM_DRV_EnableEdgeCounting>
+    <FLEXPWM_DRV_DisableEdgeCounting>true</FLEXPWM_DRV_DisableEdgeCounting>
+    <FLEXPWM_DRV_GetCaptureValue>true</FLEXPWM_DRV_GetCaptureValue>
+    <FLEXPWM_DRV_GetCaptureCycle>true</FLEXPWM_DRV_GetCaptureCycle>
+    <FLEXPWM_DRV_SetChannelMode>true</FLEXPWM_DRV_SetChannelMode>
+    <FLEXPWM_DRV_DebugEnable>true</FLEXPWM_DRV_DebugEnable>
+    <FLEXPWM_DRV_DebugDisable>true</FLEXPWM_DRV_DebugDisable>
+    <FLEXPWM_DRV_SetDeadtime>true</FLEXPWM_DRV_SetDeadtime>
+    <FLEXPWM_DRV_SelectDeadtimeSource>true</FLEXPWM_DRV_SelectDeadtimeSource>
+    <FLEXPWM_DRV_SelectSwCtrlOutput>true</FLEXPWM_DRV_SelectSwCtrlOutput>
+    <FLEXPWM_DRV_MaskOutput>true</FLEXPWM_DRV_MaskOutput>
+    <FLEXPWM_DRV_ForceApplyMask>true</FLEXPWM_DRV_ForceApplyMask>
+    <FLEXPWM_DRV_GetInterruptFlag>true</FLEXPWM_DRV_GetInterruptFlag>
+    <FLEXPWM_DRV_ClearInterruptFlag>true</FLEXPWM_DRV_ClearInterruptFlag>
+    <FLEXPWM_DRV_SetupFaultProtection>true</FLEXPWM_DRV_SetupFaultProtection>
+    <FLEXPWM_DRV_SetFaultFilterPeriod>true</FLEXPWM_DRV_SetFaultFilterPeriod>
+    <FLEXPWM_DRV_SetFaultFilterCounter>true</FLEXPWM_DRV_SetFaultFilterCounter>
+    <FLEXPWM_DRV_EnableFaultGlitchStretch>true</FLEXPWM_DRV_EnableFaultGlitchStretch>
+    <FLEXPWM_DRV_DisableFaultGlitchStretch>true</FLEXPWM_DRV_DisableFaultGlitchStretch>
+    <FLEXPWM_DRV_EnableFaultInterrupt>true</FLEXPWM_DRV_EnableFaultInterrupt>
+    <FLEXPWM_DRV_DisableFaultInterrupt>true</FLEXPWM_DRV_DisableFaultInterrupt>
+    <FLEXPWM_DRV_ClearFaultFlags>true</FLEXPWM_DRV_ClearFaultFlags>
+    <FLEXPWM_DRV_GetFaultFlags>true</FLEXPWM_DRV_GetFaultFlags>
+    <FLEXPWM_DRV_SimulateFault>true</FLEXPWM_DRV_SimulateFault>
+    <GenNumEvents>0</GenNumEvents>
+    <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
+    <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
+    <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
+    <GenMethodPos>0</GenMethodPos>
+    <GenExtraFilesCount>2</GenExtraFilesCount>
+    <ExtraFile0>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\drivers\inc\flexpwm_driver.h</ExtraFile0>
+    <ExtraFile1>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\drivers\src\flexpwm\flexpwm_driver.c</ExtraFile1>
+  </ComponentID_26>
+  <ComponentID_41>
+    <Generated>true</Generated>
+    <GenCompName>uart_pal1</GenCompName>
+    <GenComponentVersion>SDK_S32_PA_11</GenComponentVersion>
+    <GenDriverVersion>01.00</GenDriverVersion>
+    <GenEventModule />
+    <HeaderAge>1432647299</HeaderAge>
+    <CodeAge>1432647299</CodeAge>
+    <AsemblAge>-1</AsemblAge>
+    <GenNumMethods>15</GenNumMethods>
+    <UART_GetDefaultConfig>true</UART_GetDefaultConfig>
+    <UART_Init>true</UART_Init>
+    <UART_Deinit>true</UART_Deinit>
+    <UART_SetBaudRate>true</UART_SetBaudRate>
+    <UART_GetBaudRate>true</UART_GetBaudRate>
+    <UART_SendDataBlocking>true</UART_SendDataBlocking>
+    <UART_SendData>true</UART_SendData>
+    <UART_AbortSendingData>true</UART_AbortSendingData>
+    <UART_GetTransmitStatus>true</UART_GetTransmitStatus>
+    <UART_ReceiveDataBlocking>true</UART_ReceiveDataBlocking>
+    <UART_ReceiveData>true</UART_ReceiveData>
+    <UART_AbortReceivingData>true</UART_AbortReceivingData>
+    <UART_GetReceiveStatus>true</UART_GetReceiveStatus>
+    <UART_SetRxBuffer>true</UART_SetRxBuffer>
+    <UART_SetTxBuffer>true</UART_SetTxBuffer>
+    <GenNumEvents>0</GenNumEvents>
+    <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
+    <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
+    <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
+    <GenMethodPos>0</GenMethodPos>
+    <GenExtraFilesCount>3</GenExtraFilesCount>
+    <ExtraFile0>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\pal\inc\uart_pal.h</ExtraFile0>
+    <ExtraFile1>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\pal\inc\uart_pal_mapping.h</ExtraFile1>
+    <ExtraFile2>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\pal\src\uart\uart_pal.c</ExtraFile2>
+  </ComponentID_41>
+  <ComponentID_42>
+    <Generated>true</Generated>
+    <GenCompName>uart_pal2</GenCompName>
+    <GenComponentVersion>SDK_S32_PA_11</GenComponentVersion>
+    <GenDriverVersion>01.00</GenDriverVersion>
+    <GenEventModule />
+    <HeaderAge>1432647299</HeaderAge>
+    <CodeAge>1432647299</CodeAge>
+    <AsemblAge>-1</AsemblAge>
+    <GenNumMethods>15</GenNumMethods>
+    <UART_GetDefaultConfig>true</UART_GetDefaultConfig>
+    <UART_Init>true</UART_Init>
+    <UART_Deinit>true</UART_Deinit>
+    <UART_SetBaudRate>true</UART_SetBaudRate>
+    <UART_GetBaudRate>true</UART_GetBaudRate>
+    <UART_SendDataBlocking>true</UART_SendDataBlocking>
+    <UART_SendData>true</UART_SendData>
+    <UART_AbortSendingData>true</UART_AbortSendingData>
+    <UART_GetTransmitStatus>true</UART_GetTransmitStatus>
+    <UART_ReceiveDataBlocking>true</UART_ReceiveDataBlocking>
+    <UART_ReceiveData>true</UART_ReceiveData>
+    <UART_AbortReceivingData>true</UART_AbortReceivingData>
+    <UART_GetReceiveStatus>true</UART_GetReceiveStatus>
+    <UART_SetRxBuffer>true</UART_SetRxBuffer>
+    <UART_SetTxBuffer>true</UART_SetTxBuffer>
+    <GenNumEvents>0</GenNumEvents>
+    <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
+    <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
+    <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
+    <GenMethodPos>0</GenMethodPos>
+    <GenExtraFilesCount>3</GenExtraFilesCount>
+    <ExtraFile0>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\pal\inc\uart_pal.h</ExtraFile0>
+    <ExtraFile1>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\pal\inc\uart_pal_mapping.h</ExtraFile1>
+    <ExtraFile2>D:\workspaceS32DS.Power.2.1\BCU_mpc5744p\SDK\platform\pal\src\uart\uart_pal.c</ExtraFile2>
+  </ComponentID_42>
   <UsedSrcFiles>
     <SrcFile0>Drivers\C55\StaticSdk_C55.drv=1321576963</SrcFile0>
     <SrcFile1>Drivers\interrupt_manager.src=-1</SrcFile1>
     <SrcFile2>Drivers\osifcommon\osif.drv=-1</SrcFile2>
-    <SrcFile3>Drivers\C55\StaticSdk_C55_V4.drv=1321576963</SrcFile3>
-    <SrcFile4>Beans\_SDK\SdkOptions.chg=1321576790</SrcFile4>
-    <SrcFile5>Drivers\Common\EBGNSupport\StringLib.prg=1321576963</SrcFile5>
-    <SrcFile6>Drivers\PEx_C55.src=1321576963</SrcFile6>
-    <SrcFile7>Drivers\C55\S32_SDK_C55_NO_FD\flexcan_code.drv=-1</SrcFile7>
-    <SrcFile8>Drivers\adc_pal.src=-1</SrcFile8>
-    <SrcFile9>Drivers\Common\HeaderFreescale.C=1321576963</SrcFile9>
-    <SrcFile10>Drivers\Common\RTOSAdaptor.prg=1321576963</SrcFile10>
-    <SrcFile11>Drivers\C55\S32_SDK_C55\interrupt_manager.drv=-1</SrcFile11>
-    <SrcFile12>Drivers\sw\PinSettings.drv=-1</SrcFile12>
-    <SrcFile13>Drivers\Common\Header.doxy=1322851879</SrcFile13>
-    <SrcFile14>Drivers\Common\GenInitConfigSequence.prg=1321576963</SrcFile14>
-    <SrcFile15>Drivers\C55\S32_SDK_C55\pit.drv=-1</SrcFile15>
-    <SrcFile16>Drivers\Common\C55Abstract.inc=1321576963</SrcFile16>
-    <SrcFile17>Drivers\Common\C55Settings.inc=1321576963</SrcFile17>
-    <SrcFile18>Drivers\S32_SDK_DMA_32CH\edma_code.drv=-1</SrcFile18>
-    <SrcFile19>Drivers\C55\S32_SDK_C55\pit_code.drv=-1</SrcFile19>
-    <SrcFile20>Drivers\PinSettings.src=-1</SrcFile20>
-    <SrcFile21>Drivers\C55\PinSettings_MPC5744P_144.prg=-1</SrcFile21>
-    <SrcFile22>Drivers\Common\PinSettingsAbstract.inc=-1</SrcFile22>
-    <SrcFile23>Drivers\Common\CoreInfo.inc=1321576963</SrcFile23>
-    <SrcFile24>Drivers\Common\InitReg32Block.prg=1321576963</SrcFile24>
-    <SrcFile25>Drivers\C55\S32_SDK_C55_NO_FD\flexcan.drv=-1</SrcFile25>
-    <SrcFile26>Drivers\C55\C55_Repository\HAL_Port_Bridge.prg=1321576963</SrcFile26>
-    <SrcFile27>Drivers\S32K\S32_SDK\adc_pal_code.drv=-1</SrcFile27>
-    <SrcFile28>Drivers\Common\ToolChain_Settings.prg=1321576963</SrcFile28>
-    <SrcFile29>Drivers\C55\S32_SDK_C55\clock_manager.drv=-1</SrcFile29>
-    <SrcFile30>Drivers\C55\C55_Repository\StaticSdk_C55.prg=1321576963</SrcFile30>
-    <SrcFile31>Drivers\C55\S32_SDK_C55\clock_manager_code.drv=-1</SrcFile31>
-    <SrcFile32>Drivers\Common\HeaderFreescale.h=1321576963</SrcFile32>
-    <SrcFile33>Drivers\Common\EBGNSupport\TimingLib.prg=1321576963</SrcFile33>
-    <SrcFile34>Drivers\pit.src=-1</SrcFile34>
-    <SrcFile35>Drivers\S32K\S32_SDK\adc_pal.drv=-1</SrcFile35>
-    <SrcFile36>Drivers\Common\Header.h=1321576963</SrcFile36>
-    <SrcFile37>Drivers\C55\HAL_Port_Bridge_V2.prg=1321576963</SrcFile37>
-    <SrcFile38>Drivers\sw\RTOSAdaptor\Common_RTOSAdaptor.prg=1322851879</SrcFile38>
-    <SrcFile39>Drivers\Common\Header.c=1321576963</SrcFile39>
-    <SrcFile40>Drivers\osif.src=-1</SrcFile40>
-    <SrcFile41>Drivers\sw\RTOSAdaptor\Default_RTOSAdaptor.prg=1322851879</SrcFile41>
-    <SrcFile42>Drivers\Common\WriteBlock_NotRst.prg=1321576963</SrcFile42>
-    <SrcFile43>Beans\adc_pal\Drivers\S32K\S32_SDK\adc_pal_global_cfg.drv=1321576791</SrcFile43>
-    <SrcFile44>Drivers\Common\InitRegBlock.prg=1321576963</SrcFile44>
-    <SrcFile45>Drivers\Common\Static_SupportSubroutines.prg=1321576963</SrcFile45>
-    <SrcFile46>Drivers\edma.src=-1</SrcFile46>
-    <SrcFile47>Drivers\flexcan.src=-1</SrcFile47>
-    <SrcFile48>Drivers\S32_SDK_DMA_32CH\edma.drv=-1</SrcFile48>
-    <SrcFile49>Drivers\Common\HeaderCopyright.inc=1321576963</SrcFile49>
-    <SrcFile50>Drivers\GlobalConfigFiles.drv=1321576963</SrcFile50>
-    <SrcFile51>Drivers\clock_manager.src=-1</SrcFile51>
-    <SrcFile52>Drivers\Common\Header.end=1321576963</SrcFile52>
-    <SrcFile53>Drivers\Common\InitReg16Block.prg=1321576963</SrcFile53>
+    <SrcFile3>Drivers\C55\S32_SDK_C55\flexpwm.drv=-1</SrcFile3>
+    <SrcFile4>Drivers\C55\StaticSdk_C55_V4.drv=1321576963</SrcFile4>
+    <SrcFile5>Beans\_SDK\SdkOptions.chg=1321576790</SrcFile5>
+    <SrcFile6>Drivers\Common\EBGNSupport\StringLib.prg=1321576963</SrcFile6>
+    <SrcFile7>Drivers\PEx_C55.src=1321576963</SrcFile7>
+    <SrcFile8>Drivers\C55\S32_SDK_C55_NO_FD\flexcan_code.drv=-1</SrcFile8>
+    <SrcFile9>Drivers\adc_pal.src=-1</SrcFile9>
+    <SrcFile10>Drivers\Common\HeaderFreescale.C=1321576963</SrcFile10>
+    <SrcFile11>Drivers\Common\RTOSAdaptor.prg=1321576963</SrcFile11>
+    <SrcFile12>Drivers\C55\S32_SDK_C55\interrupt_manager.drv=-1</SrcFile12>
+    <SrcFile13>Drivers\sw\PinSettings.drv=-1</SrcFile13>
+    <SrcFile14>Drivers\Common\Header.doxy=1322851879</SrcFile14>
+    <SrcFile15>Drivers\Common\GenInitConfigSequence.prg=1321576963</SrcFile15>
+    <SrcFile16>Drivers\C55\S32_SDK_C55\pit.drv=-1</SrcFile16>
+    <SrcFile17>Drivers\Common\C55Abstract.inc=1321576963</SrcFile17>
+    <SrcFile18>Drivers\C55\S32_SDK_C55\flexpwm_code.drv=-1</SrcFile18>
+    <SrcFile19>Drivers\Common\C55Settings.inc=1321576963</SrcFile19>
+    <SrcFile20>Drivers\ic_pal.src=-1</SrcFile20>
+    <SrcFile21>Drivers\S32_SDK_DMA_32CH\edma_code.drv=-1</SrcFile21>
+    <SrcFile22>Drivers\S32K\S32K144_SDK01\ic_pal.drv=-1</SrcFile22>
+    <SrcFile23>Beans\ic_pal\Drivers\S32K\S32K144_SDK01\ic_pal_global_cfg.drv=1321576723</SrcFile23>
+    <SrcFile24>Drivers\C55\S32_SDK_C55\pit_code.drv=-1</SrcFile24>
+    <SrcFile25>Drivers\PinSettings.src=-1</SrcFile25>
+    <SrcFile26>Drivers\C55\PinSettings_MPC5744P_144.prg=-1</SrcFile26>
+    <SrcFile27>Drivers\Common\PinSettingsAbstract.inc=-1</SrcFile27>
+    <SrcFile28>Drivers\Common\CoreInfo.inc=1321576963</SrcFile28>
+    <SrcFile29>Drivers\Common\InitReg32Block.prg=1321576963</SrcFile29>
+    <SrcFile30>Drivers\C55\S32_SDK_C55_NO_FD\flexcan.drv=-1</SrcFile30>
+    <SrcFile31>Drivers\C55\C55_Repository\HAL_Port_Bridge.prg=1321576963</SrcFile31>
+    <SrcFile32>Drivers\S32K\S32_SDK\adc_pal_code.drv=-1</SrcFile32>
+    <SrcFile33>Drivers\Common\ToolChain_Settings.prg=1321576963</SrcFile33>
+    <SrcFile34>Drivers\C55\S32_SDK_C55\clock_manager.drv=-1</SrcFile34>
+    <SrcFile35>Drivers\C55\C55_Repository\StaticSdk_C55.prg=1321576963</SrcFile35>
+    <SrcFile36>Drivers\C55\S32_SDK_C55\clock_manager_code.drv=-1</SrcFile36>
+    <SrcFile37>Drivers\Common\HeaderFreescale.h=1321576963</SrcFile37>
+    <SrcFile38>Drivers\Common\EBGNSupport\TimingLib.prg=1321576963</SrcFile38>
+    <SrcFile39>Drivers\flexpwm.src=-1</SrcFile39>
+    <SrcFile40>Drivers\pit.src=-1</SrcFile40>
+    <SrcFile41>Drivers\S32K\S32_SDK\adc_pal.drv=-1</SrcFile41>
+    <SrcFile42>Drivers\Common\Header.h=1321576963</SrcFile42>
+    <SrcFile43>Drivers\C55\HAL_Port_Bridge_V2.prg=1321576963</SrcFile43>
+    <SrcFile44>Drivers\sw\RTOSAdaptor\Common_RTOSAdaptor.prg=1322851879</SrcFile44>
+    <SrcFile45>Drivers\Common\Header.c=1321576963</SrcFile45>
+    <SrcFile46>Drivers\osif.src=-1</SrcFile46>
+    <SrcFile47>Drivers\sw\RTOSAdaptor\Default_RTOSAdaptor.prg=1322851879</SrcFile47>
+    <SrcFile48>Beans\uart_pal\Drivers\S32K\S32K144_SDK01\uart_pal_global_cfg.drv=1321576722</SrcFile48>
+    <SrcFile49>Drivers\Common\WriteBlock_NotRst.prg=1321576963</SrcFile49>
+    <SrcFile50>Beans\adc_pal\Drivers\S32K\S32_SDK\adc_pal_global_cfg.drv=1321576791</SrcFile50>
+    <SrcFile51>Drivers\Common\InitRegBlock.prg=1321576963</SrcFile51>
+    <SrcFile52>Drivers\S32K\S32K144_SDK01\ic_pal_code.drv=-1</SrcFile52>
+    <SrcFile53>Drivers\Common\Static_SupportSubroutines.prg=1321576963</SrcFile53>
+    <SrcFile54>Drivers\S32K\S32K144_SDK01\uart_pal.drv=-1</SrcFile54>
+    <SrcFile55>Drivers\uart_pal.src=-1</SrcFile55>
+    <SrcFile56>Drivers\edma.src=-1</SrcFile56>
+    <SrcFile57>Drivers\flexcan.src=-1</SrcFile57>
+    <SrcFile58>Drivers\S32_SDK_DMA_32CH\edma.drv=-1</SrcFile58>
+    <SrcFile59>Drivers\Common\HeaderCopyright.inc=1321576963</SrcFile59>
+    <SrcFile60>Drivers\GlobalConfigFiles.drv=1321576963</SrcFile60>
+    <SrcFile61>Drivers\clock_manager.src=-1</SrcFile61>
+    <SrcFile62>Drivers\Common\Header.end=1321576963</SrcFile62>
+    <SrcFile63>Drivers\S32K\S32K144_SDK01\uart_pal_code.drv=-1</SrcFile63>
+    <SrcFile64>Drivers\Common\InitReg16Block.prg=1321576963</SrcFile64>
   </UsedSrcFiles>
 </GenerationInfo_G_C>
 
