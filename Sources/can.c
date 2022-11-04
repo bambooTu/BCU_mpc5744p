@@ -393,24 +393,28 @@ bool CAN_QueueDataXfer(CAN_MODULE_e instance) {
  */
 void CAN_QueueDataRecv(void) {
     flexcan_msgbuff_t canRxMsg;
+#if (CAN_NUMBER_OF_MODULE >= 1)
     if (CAN_GetRxQueueCount(CAN_MODULE_1)) {
         CAN_PullRxQueue(CAN_MODULE_1, &canRxMsg);
         /* USER CODE BEGING */
         PINS_DRV_TogglePins(PTC, (1 << 12));
         /* USER CODE END */
     }
+#elif (CAN_NUMBER_OF_MODULE >= 2)
     if (CAN_GetRxQueueCount(CAN_MODULE_2)) {
         CAN_PullRxQueue(CAN_MODULE_2, &canRxMsg);
         /* USER CODE BEGING */
        
         /* USER CODE END */
     }
+#elif (CAN_NUMBER_OF_MODULE == 3)
     if (CAN_GetRxQueueCount(CAN_MODULE_3)) {
         CAN_PullRxQueue(CAN_MODULE_3, &canRxMsg);
         /* USER CODE BEGING */
         
         /* USER CODE END */
     }
+#endif
 }
 /* USER CODE END 0 */
 /*******************************************************************************
